@@ -27,6 +27,9 @@ nav a {
 nav .logo {
   margin-right: auto;
 }
+nav h3 {
+  margin-top: 0;
+}
 footer {
   display: block;
   text-align: center;

@@ -5,8 +5,9 @@ const Navbar = () => {
   return (
     <nav>
       <div className='logo'>
-        {/* <img src='/next-js-seeklogo.com.svg' width='100' /> */}
-        <Image src='/next-js-seeklogo.com.svg' width='100' height='60' />
+        {/* <img src='/next-js-seeklogo.com.svg' width='70' /> */}
+        <Image src='/next-js-seeklogo.com.svg' width='70' height='42' />
+        <h3>Szkolne Koło Harcerskie</h3>
       </div>
       <Link href='/'>
         <a>Strona Główna</a>
