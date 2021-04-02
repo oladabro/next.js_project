@@ -1,5 +1,5 @@
 const Team = () => {
-  return <div>Poznaj naszą drużynę</div>;
+  return <h1>Poznaj naszą drużynę</h1>;
 };
 
 export default Team;
