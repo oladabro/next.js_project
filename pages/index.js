@@ -7,7 +7,6 @@ import styles from '../styles/Home.module.css';
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <h1>Homepage</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -21,7 +20,6 @@ export default function Home() {
       <Link href='/team'>
         <a>Poznaj naszą drużynę:)</a>
       </Link>
-      <Footer />
     </div>
   );
 }
