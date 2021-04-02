@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className='logo'>
-        <h3>Szkolne koło harcerskie</h3>
+        <img src='/next-js-seeklogo.com.svg' width='100' />
       </div>
       <Link href='/'>
         <a>Strona Główna</a>
