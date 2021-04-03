@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styles from '../../styles/Team.module.css';
+import Link from 'next/link';
 
 export const getStaticProps = async () => {
   const response = await fetch('https://jsonplaceholder.typicode.com/users');
@@ -18,9 +19,9 @@ const Team = ({ scouts }) => {
       </Head>
       <h1>Poznaj naszą drużynę</h1>
       {scouts.map((scout) => (
-        <div key={scout.id}>
+        <Link href={`/team/${scout.id}`} key={scout.id}>
           <a className={styles.single}>{scout.name}</a>
-        </div>
+        </Link>
       ))}
     </>
   );
