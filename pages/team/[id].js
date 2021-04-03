@@ -4,7 +4,7 @@ export const getStaticPaths = async () => {
 
   const paths = data.map((scout) => {
     return {
-      path: { id: scout.id.toString() },
+      params: { id: scout.id.toString() },
     };
   });
 
@@ -14,10 +14,25 @@ export const getStaticPaths = async () => {
   };
 };
 
-const Details = () => {
+export const getStaticProps = async (context) => {
+  const id = context.params.id;
+
+  const resp = await fetch('https://jsonplaceholder.typicode.com/users/' + id);
+
+  const data = await resp.json();
+
+  return {
+    props: { scout: data },
+  };
+};
+
+const Details = ({ scout }) => {
+  console.log(scout);
   return (
     <div>
-      <h1>Dane osobowe</h1>
+      <h1>{scout.name}</h1>
+      <p>email: {scout.email}</p>
+      <p>miasto: {scout.address.city}</p>
     </div>
   );
 };
