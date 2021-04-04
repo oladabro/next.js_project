@@ -45,3 +45,10 @@ footer {
   color: #4979ff;
   text-decoration: underline;
 }
+
+.link:hover {
+  text-decoration: underline;
+}
+.linkSelected {
+  font-weight: 700;
+}
