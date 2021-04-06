@@ -14,10 +14,24 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className='logo'>
+      <div className='logo-container'>
         {/* <img src='/next-js-seeklogo.com.svg' width='70' /> */}
-        <Image src='/next-js-seeklogo.com.svg' width='70' height='42' />
-        <h3>Szkolne Koło Harcerskie</h3>
+        <img className='logo-sign1' src='/krzyz_harc.png' width='70' />
+
+        <a href='/'>
+          <img
+            src='/next-js-seeklogo.com.svg'
+            width='70'
+            height='42'
+            className='logo-sign2'
+          />
+        </a>
+
+        <Link href='/'>
+          <a>
+            <h3 className='website-name'>Szkolne Koło Harcerskie</h3>
+          </a>
+        </Link>
       </div>
 
       <Link href='/'>

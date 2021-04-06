@@ -1,7 +1,8 @@
 const Footer = () => {
+  const date = new Date();
   return (
     <footer>
-      <p>Copyright 2021 Szkolne Koło Harcerskie</p>
+      <p>Copyright {date.getFullYear()} Szkolne Koło Harcerskie</p>
     </footer>
   );
 };

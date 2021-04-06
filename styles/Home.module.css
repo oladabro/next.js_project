@@ -6,12 +6,12 @@
   text-align: center;
 }
 .text {
-  color: #777;
+  color: #333;
 }
 .btn {
   padding: 8px 15px;
   margin: 20px auto;
-  background: #4979ff;
+  background: var(--secondarycolor);
   border-radius: 4px;
   color: white;
   text-align: center;
