@@ -9,7 +9,12 @@ const Contact = () => {
       </Head>
       <div>
         <h3>Chcesz do nasz dołączyć?</h3>
-        <p>Napisz do nas na adres: harcerze12@harcerze.org</p>
+        <p>
+          Napisz do nas na adres:{' '}
+          <a className='contact' href='mailto:harcerze12@harcerze.org'>
+            harcerze12@harcerze.org
+          </a>
+        </p>
         <p>Zadzwoń: 123-234-567</p>
         <p>
           Lub przyjdź na jedno z naszych spotkań, które odbywają się w każdą
