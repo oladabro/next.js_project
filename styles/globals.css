@@ -5,6 +5,11 @@
   --secondarycolor: #9ed148;
   --addcolor: #fd8426;
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body {
   background: white;
@@ -24,8 +29,8 @@ a {
   margin: 0 auto;
 }
 nav {
-  margin: 10px auto 80px;
-  padding: 10px 0;
+  margin: 0 auto 50px;
+  padding: 30px 0;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -89,3 +94,81 @@ footer p {
   top: 20px;
   right: 0;
 }
+
+/* styling carousel */
+
+.carousel {
+  width: 960px;
+  margin: 0 auto 50px;
+  position: relative;
+  height: 500px;
+}
+
+.carousel__container {
+  height: 100%;
+  position: relative;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel__slide img {
+  height: 500px;
+  width: 960px;
+  object-fit: cover;
+}
+
+.carousel__slide {
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+.carousel__slide.active__slide {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.carousel__btn {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  color: #ffffff;
+  opacity: 0.6;
+  user-select: none;
+}
+
+.carousel__btn--prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  z-index: 10;
+}
+
+.carousel__btn--next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  z-index: 10;
+}
+
+/* .carousel__nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+} */
+
+/* .carousel__indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 0px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 4px;
+  cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+  background: rgba(0, 0, 0, 0.65);
+} */

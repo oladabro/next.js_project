@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import Carousel from '../components/Carousel';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -13,6 +14,8 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <h1 className={styles.title}>Witaj na naszej stronie</h1>
+        <Carousel />
+
         <p className={styles.text}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
