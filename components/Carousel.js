@@ -38,9 +38,10 @@ const Carousel = () => {
               }
               key={index}
             >
-              {index === currentSlide && (
+              {/* {index === currentSlide && (
                 <img src={slide.imageSrc} alt={slide.imageName} />
-              )}
+              )} */}
+              <img src={slide.imageSrc} alt={slide.imageName} />
             </li>
           );
         })}
