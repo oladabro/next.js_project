@@ -122,16 +122,12 @@ footer p {
 
 .carousel__slide {
   opacity: 0.8;
-  transition: 0.5s ease;
-  transform: translateX(100%);
-  /* transition: 0.3s ease;  */
+  transition: 0.3s ease;
 }
 
 .carousel__slide.active__slide {
   opacity: 1;
-  transition: 0.5s ease-in-out;
-  transform: translateX(0%);
-  /* transition: 0.3s ease; */
+  transition: 0.3s ease;
 }
 
 .carousel__btn {

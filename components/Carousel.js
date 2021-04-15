@@ -13,7 +13,6 @@ const Carousel = () => {
   const prevSlide = () => {
     setCurrentSlide(currentSlide === 0 ? length - 1 : currentSlide - 1);
   };
-  console.log(currentSlide);
 
   // check if array with images contains data images, if no then no carousel is shown
 
@@ -38,10 +37,9 @@ const Carousel = () => {
               }
               key={index}
             >
-              {/* {index === currentSlide && (
+              {index === currentSlide && (
                 <img src={slide.imageSrc} alt={slide.imageName} />
-              )} */}
-              <img src={slide.imageSrc} alt={slide.imageName} />
+              )}
             </li>
           );
         })}
