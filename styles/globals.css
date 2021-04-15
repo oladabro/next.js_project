@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import '~react-image-gallery/styles/css/image-gallery.css';
 
 :root {
   --primarycolor: #3f7d2e;
@@ -174,3 +175,16 @@ footer p {
 .carousel__indicator.current-slide {
   background: rgba(0, 0, 0, 0.65);
 } */
+
+.image-gallery-icon:hover {
+  color: var(--secondarycolor);
+}
+.image-gallery-slide .image-gallery-image {
+  width: 960px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.image-gallery {
+  margin-bottom: 30px;
+}

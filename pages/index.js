@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
 import styles from '../styles/Home.module.css';
+import ReactCarousel from '../components/ReactCarousel';
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <h1 className={styles.title}>Witaj na naszej stronie</h1>
-        <Carousel />
+        <ReactCarousel />
 
         <p className={styles.text}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
